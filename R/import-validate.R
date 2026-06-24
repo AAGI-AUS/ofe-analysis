@@ -4,6 +4,8 @@
 #' @return Invisibly returns TRUE if checks pass.
 #' @export
 validate_ofe_data <- function(x) {
-  stopifnot(is.data.frame(x))
+  if (!is.data.frame(x)) {
+    stop("Input must be a data.frame.", call. = FALSE)
+  }
   invisible(TRUE)
 }

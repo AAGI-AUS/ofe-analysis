@@ -4,4 +4,8 @@ test_that("ofe_group_means computes grouped means", {
 
   expect_true(all(c("g", "mean", "n") %in% names(out)))
   expect_equal(nrow(out), 2)
+  expect_equal(out$mean[out$g == "A"], 2)
+  expect_equal(out$mean[out$g == "B"], 2)
+  expect_equal(out$n[out$g == "A"], 2)
+  expect_equal(out$n[out$g == "B"], 1)
 })

@@ -3,7 +3,7 @@
 #' @param data A data.frame.
 #' @param value Bare column name for numeric response.
 #' @param ... Bare grouping columns.
-#' @return A data.frame with grouped means and n.
+#' @return A data.frame containing grouping columns, mean, and n.
 #' @export
 ofe_group_means <- function(data, value, ...) {
   value <- rlang::enquo(value)
