@@ -1,0 +1,8 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^README\.Rmd$
+^NEWS\.md$
+^data-raw$
+^\.github$
+^renv$
+^renv\.lock$
