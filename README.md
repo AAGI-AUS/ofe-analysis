@@ -2,7 +2,7 @@
 
 ## Project purpose
 
-On-Farm Experimentation (OFE) mean analysis package for repeatable data preparation, summarisation, and reporting.
+On-Farm Experimentation (OFE) analysis package scaffold.
 
 ## Installation
 
@@ -15,21 +15,14 @@ On-Farm Experimentation (OFE) mean analysis package for repeatable data preparat
 
 ```r
 library(ofeanalysis)
+validate_ofe_data(data.frame(plot = 1:3, response = c(2.1, 2.5, 2.3)))
 ```
 
-## Data assumptions
+## Current scope
 
-- Input data is provided as a `data.frame`-like object.
-- Response columns used for means are numeric.
-- Grouping columns are consistent and well-formed.
-
-## Planned modules
-
-- Data import and validation
-- Cleaning and harmonisation
-- Grouped mean summaries
-- Baseline models
-- Standardised plots and reporting
+- Minimal package structure for OFE analysis work.
+- Input validation helper for `data.frame` inputs.
+- Lightweight foundation for deliberate future module additions.
 
 ## Development workflow
 
