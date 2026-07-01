@@ -8,7 +8,7 @@ Authors@R: c(
            comment = c("GRDC Project CUR2210-005OPX (AAGI-CU), UOA2301-005OPX (AAGI-AU)", ROR = "02xwr1996"))
     ))
 Description: Tools for OFE (On-Farm Experimentation) mean analysis workflows,
-    including data preparation, summarisation, and reporting.
+    currently providing a minimal foundation for future analysis modules.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -16,15 +16,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Depends:
     R (>= 4.3.0)
-Imports:
-    dplyr (>= 1.1.0),
-    tidyr (>= 1.3.0),
-    ggplot2 (>= 3.4.0),
-    rlang (>= 1.1.0)
 Suggests:
-    testthat (>= 3.0.0),
-    knitr,
-    rmarkdown,
-    pkgdown
+    testthat (>= 3.0.0)
 Config/testthat/edition: 3
-VignetteBuilder: knitr
